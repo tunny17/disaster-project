@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peg</title>
     <link rel="stylesheet" href="/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -13,7 +19,7 @@
         <nav>
             <div    class="logo-container">
                 <img src="" alt="">
-                <h2>Peg</h2>
+                <h2>nig</h2>
                 <p>Help a flood victim today.</p>
             </div>
             <ul>
@@ -21,13 +27,13 @@
                     <a href="/index.html">Home</a>
                 </li>
                 <li>
-                    <a href="">About us</a>
+                    <a href="#ourMission">About us</a>
                 </li>
                 <li>
                     <a href="/joinuspage/index.html">Join us</a>
                 </li>
                 <li>
-                    <a href="">Contact us</a>
+                    <a href="#gallery">Gallery</a>
                 </li>
                 <li>
                     <button>
@@ -66,7 +72,7 @@
                 <p>homes affected by flood</p>
             </div>
             <div>
-                <h4>12</h4>
+                <h4>33 of 36</h4>
                 <p>states affected by flood</p>
             </div>
         </div>
@@ -81,32 +87,73 @@
             <div    class="mission-text">
                 <img src="/img/waves.svg" alt="">
                 <h2>Our Mission</h2>
-                <h4>This is an organization connecting non-government organization together to help flood victims. Our mission is to create awareness to the rest of the world on the impact of the flood on families and homes and then help create solutions on how to solve this problem.</h4>
+                <h4 id="ourMission">
+                    This is not an organization but a medium for awareness to every NGO 
+                    and other relief bodies to come to Nigeria's aid and help in any way possible. 
+                    This is also to encourage every individual trying to provide any form of assistance in forms of cash.
+                </h4>
                 <img src="/img/waves.svg" alt="">
             </div>
         </div>
     </section>
-<!-- 
+
 
     <section class="stories">
         <h2>Stories</h2>
         <div    class="stories-container">
-            <div>
-                <img src="" alt="">
-                <h3>Joel Amaka</h3>
-                <h4>
-                    “The flood took away my two sons. I have never felt this depressed in my entire life. I am pleading with my Nigerian brothers & sisters to come to my aid.”
-                </h4>
+            <div    class="story-container">
+                <img src="/img/stories2copy.jpg" alt="">
+                <div    class="stories-text">
+                    <h3>Joel Amaka</h3>
+                    <h4>
+                        “I lost my primary source of living to the flood and my life has never remained the same. I am seeking for any available help to help me get back on my feet.”
+                    </h4>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <h3>Joel Amaka</h3>
-                <h4>
-                    “The flood took away my two sons. I have never felt this depressed in my entire life. I am pleading with my Nigerian brothers & sisters to come to my aid.”
-                </h4>
+            <div    class="story-container">
+                <img src="/img/stories3.jpg" alt="">
+                <div    class="stories-text">
+                    <h3>Adeife Funke</h3>
+                    <h4>
+                        “The flood took away my two sons. I have never felt this depressed in my entire life. I am pleading with my Nigerian brothers & sisters to come to my aid.”
+                    </h4>
+                </div>
+            </div>
+            <div    class="story-container">
+                <img src="/img/stories5.jpg" alt="">
+                <div    class="stories-text">
+                    <h3>Afolayan Ola</h3>
+                    <h4>
+                        “We've been having attacks from snakes of recent and it's terrifying having to live with that every second.”
+                    </h4>
+                </div>
             </div>
         </div>
-    </section> -->
+    </section>
+
+    <section class="carousel">
+        <div    class="gallery" id="gallery">
+            <h2>Gallery</h2>
+        </div>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div    class="donations-text">
+            <h2>Your assistance makes a difference</h2>
+        </div>
+    </section>
 
     
 

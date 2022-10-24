@@ -30,6 +30,7 @@ body::-webkit-scrollbar {
 .navigation nav .logo-container {
     margin-right: 20%;
     margin-top: -5px;
+    text-align: center;
 }
 .navigation nav .logo-container h2 {
     font-size: 2.2em;
