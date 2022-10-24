@@ -59,7 +59,7 @@ body::-webkit-scrollbar {
     cursor: pointer;
     position: relative;
 }
-.navigation nav ul li::after {
+.navigation nav ul li:not(:last-child)::after {
     background: none repeat scroll 0 0  transparent;
     bottom: 0;
     top: 35px;
@@ -72,7 +72,7 @@ body::-webkit-scrollbar {
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
-.navigation nav ul li:hover::after {
+.navigation nav ul li:not(:last-child):hover::after {
     width: 70%;
     left: 0;
 }
@@ -86,8 +86,12 @@ body::-webkit-scrollbar {
     border: none;
     color: #fff;
     background-color: #00C49A;
+    cursor: pointer;
     font-family: 'Lexend Deca', sans-serif;
 }
+/* .navigation nav ul button:hover {
+    box-shadow: 5px 5px 15px #000;
+} */
 
 
 
@@ -189,6 +193,7 @@ body::-webkit-scrollbar {
     background-color: #fff;
 }
 .our-mission-container {
+    padding: 30px;
     display: flex;
     align-items: center;
     margin-left: 10%;

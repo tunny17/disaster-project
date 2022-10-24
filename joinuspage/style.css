@@ -58,18 +58,24 @@ body::-webkit-scrollbar {
     list-style: none;
     align-items: center;
     cursor: pointer;
+    position: relative;
 }
-.navigation nav ul li::after {
-    display: absolute;
-    top: 0;
-    bottom: 10px;
-    height: 20px;
+.navigation nav ul li:not(:last-child)::after {
+    background: none repeat scroll 0 0  transparent;
+    bottom: 0;
+    top: 35px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.navigation nav ul li:not(:last-child):hover::after {
+    width: 70%;
     left: 0;
-    cursor: pointer;
-}
-.navigation nav ul li::after:hover {
-    left: 20%;
-    cursor: pointer;
 }
 .navigation nav ul li:not(:last-child) {
     padding-top: 15px;
@@ -81,6 +87,7 @@ body::-webkit-scrollbar {
     border: none;
     color: #fff;
     background-color: #00C49A;
+    cursor: pointer;
     font-family: 'Lexend Deca', sans-serif;
 }
 
