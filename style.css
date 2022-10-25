@@ -374,14 +374,18 @@ body::-webkit-scrollbar {
         margin-top: 5%;
     }
     .navigation-ul {
-        /* display: none; */
-        /* display: unset; */
         position: absolute;
         top: 50%;
         left: 60%;
     }
     .navigation-ul li {
-        margin: 10px;
+        margin: 5px;
+    }
+    .navigation-ul li:not(:last-child) {
+        padding: 5px;
+    }
+    .visible {
+        display: block;
     }
     .navigation nav .logo-container {
         width: 75%;
@@ -425,7 +429,7 @@ body::-webkit-scrollbar {
         text-align: center;
     }
     .text-container {
-        top: 38%;
+        top: 28%;
         left: unset;
     }
     .statistics {
@@ -563,7 +567,7 @@ body::-webkit-scrollbar {
         text-align: center;
     }
     .text-container {
-        top: 38%;
+        top: 42%;
         left: unset;
     }
     .statistics {
