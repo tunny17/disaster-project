@@ -19,6 +19,15 @@ const swiper = new Swiper('.swiper', {
     },
 
     autoplay: {
-        delay: 1000,
+        delay: 1500,
     },
 });
+
+let button = document.querySelector('.menu');
+let navigation = document.querySelector('.navigation-ul');
+button.addEventListener('click', openNav);
+
+function openNav() {
+  navigation.classList.toggle('visible');
+  console.log('yam');
+}
