@@ -361,3 +361,18 @@ body::-webkit-scrollbar {
     font-weight: 500;
     font-variant: small-caps;
 }
+
+
+
+
+
+
+
+
+
+@media (max-width: 376px) {
+    .navigation-ul {
+        /* display: none; */
+        visibility: hidden;
+    }
+}

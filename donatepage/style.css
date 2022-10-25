@@ -149,9 +149,60 @@ body::-webkit-scrollbar {
 
 
 .payments {
-    margin-left: 20%;
+    margin-top: 10%;
+    margin-left: 15%;
+    display: flex;
+    height: 40vh;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.payments1,
+.payments2
+ {
+    margin: 10px;
     width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.payments1 h3 {
+    color: #00C49A;
+}
+.payments2 h3 {
+    color: rgb(125,71,51);
+}
+.details div {
+    margin: 20px;
+}
+strong {
+    font-weight: 500;
+}
+.payments h4 {
+    color: rgb(21,96,100);
+}
+.payments h5 {
+    margin-top: 10px;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+
+.drops {
+    width: 70%;
+    text-align: center;
+    margin: 5% 15%;
+    line-height: 40px;
+}
+.drops h3 {
+    margin-top: 7%;
+}
+.drops h4 {
+    color: rgb(0,196,154);
+}
+.drops p {
+    color: rgb(21,96,100);
 }
