@@ -29,7 +29,7 @@ body::-webkit-scrollbar {
 }
 .navigation nav .logo-container {
     margin-right: 20%;
-    margin-top: -5px;
+    margin-top: 10px;
     text-align: center;
 }
 .navigation nav .logo-container h2 {
@@ -40,6 +40,9 @@ body::-webkit-scrollbar {
     font-size: 7px;
     font-weight: 200;
     color: #fff;
+}
+.navigation nav .logo-container img {
+    display: none;
 }
 .navigation nav ul {
     width: 60%;
@@ -89,9 +92,7 @@ body::-webkit-scrollbar {
     cursor: pointer;
     font-family: 'Lexend Deca', sans-serif;
 }
-/* .navigation nav ul button:hover {
-    box-shadow: 5px 5px 15px #000;
-} */
+
 
 
 
@@ -371,8 +372,408 @@ body::-webkit-scrollbar {
 
 
 @media (max-width: 376px) {
-    .navigation-ul {
-        /* display: none; */
-        visibility: hidden;
+    .navigation {
+        margin-top: 5%;
+    }
+    .navigation nav ul {
+        display: none;
+        /* display: unset; */
+        position: absolute;
+        top: 50%;
+        left: 60%;
+    }
+    .navigation nav ul li {
+        margin: 10px;
+    }
+    .navigation nav .logo-container {
+        width: 75%;
+        display: flex;
+        margin-top: 5%;
+        justify-content: space-between;
+    }
+    .navigation  nav .logo-container img {
+        display: unset;
+        height: 5vh;
+        width: 10%;
+    }
+    .navigation nav .logo-container h2 {
+        font-size: 1.7em;
+    }
+    .navigation nav .logo-container p {
+        font-size: 5px;
+    }
+
+
+
+
+    .video-background video {
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .text-container h1 {
+        width: 100%;
+        font-size: 2em;
+        /* text-align: left; */
+        line-height: 40px;
+    }
+    .text-container h3 {
+        width: 80%;
+        margin-top: -20px;
+        margin-left: 10%;
+        text-align: center;
+    }
+    .text-container {
+        top: 38%;
+        left: unset;
+    }
+    .statistics {
+        height: 80vh;
+    }
+    .statistics img {
+        width: 50%;
+        height: 50%;
+        margin: 15% 20%;
+    }
+    .text-container-2 {
+        flex-direction: column;
+        width: 100%;
+        height: 20vh;
+        margin: 1%;
+    }
+    .our-mission {
+        top: 1470px;
+        height: 30vh;
+    }
+    .our-mission-container {
+        width: 90%;
+        margin: 0;
+        flex-direction: column;
+    }
+    .our-mission .image-container {
+        max-width: 70%;
+        margin-left: 15%;
+    }
+    .mission-text {
+        margin: 20px 0px;
+        text-align: center;
+    }
+    .our-mission h2 {
+        margin-left: -13px;
+    }
+    .mission-text img {
+        display: none;
+    }
+    .our-mission h4 {
+        width: 90%;
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+
+    .stories {
+        top: 2100px;
+        height: 80vh;
+    }
+    .stories-container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .story-container {
+        width: 70%;
+        margin: 7% 0;
+    }
+    .stories-text h3 {
+        font-size: 15px;
+    }
+    .stories-text h4 {
+        font-size: 13px;
+    }
+
+
+    .carousel {
+        top: 3550px;
+    }
+    .swiper {
+        margin: 10% 0;
+        width: 90%;
+        height: 40vh;
+    }
+    .donations-text h2 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 415px) {
+    .navigation {
+        margin-top: 5%;
+    }
+    .navigation nav ul {
+        display: none;
+        /* display: unset; */
+        position: absolute;
+        top: 50%;
+        left: 60%;
+    }
+    .navigation nav ul li {
+        margin: 10px;
+    }
+    .navigation nav .logo-container {
+        width: 75%;
+        display: flex;
+        margin-top: 5%;
+        justify-content: space-between;
+    }
+    .navigation  nav .logo-container img {
+        display: unset;
+        height: 5vh;
+        width: 10%;
+    }
+    .navigation nav .logo-container h2 {
+        font-size: 1.7em;
+    }
+    .navigation nav .logo-container p {
+        font-size: 5px;
+    }
+
+
+
+
+    .video-background video {
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .text-container h1 {
+        width: 98%;
+        font-size: 2em;
+        line-height: 40px;
+    }
+    .text-container h3 {
+        width: 80%;
+        margin-top: -20px;
+        margin-left: 10%;
+        text-align: center;
+    }
+    .text-container {
+        top: 38%;
+        left: unset;
+    }
+    .statistics {
+        height: 80vh;
+    }
+    .statistics img {
+        width: 60%;
+        height: 60%;
+        margin: 15% 15%;
+    }
+    .text-container-2 {
+        flex-direction: column;
+        width: 100%;
+        height: 20vh;
+        margin: 1%;
+    }
+    .our-mission {
+        top: 1470px;
+        height: 30vh;
+    }
+    .our-mission-container {
+        width: 90%;
+        margin: 0;
+        flex-direction: column;
+    }
+    .our-mission .image-container {
+        max-width: 80%;
+        margin-left: 13%;
+    }
+    .mission-text {
+        margin: 20px 10px;
+        text-align: center;
+    }
+    .our-mission h2 {
+        margin-left: -13px;
+    }
+    .mission-text img {
+        display: none;
+    }
+    .our-mission h4 {
+        width: 90%;
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+
+    .stories {
+        top: 2100px;
+        height: 80vh;
+    }
+    .stories-container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .story-container {
+        width: 70%;
+        margin: 7% 0;
+    }
+    .stories-text h3 {
+        font-size: 15px;
+    }
+    .stories-text h4 {
+        font-size: 13px;
+    }
+
+
+    .carousel {
+        top: 3550px;
+    }
+    .swiper {
+        margin: 10% 0;
+        width: 90%;
+        height: 40vh;
+    }
+    .donations-text h2 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 769px) {
+    .navigation {
+        margin-top: 5%;
+    }
+    .navigation nav ul {
+        display: none;
+        /* display: unset; */
+        position: absolute;
+        top: 50%;
+        left: 60%;
+    }
+    .navigation nav ul li {
+        margin: 10px;
+    }
+    .navigation nav .logo-container {
+        width: 75%;
+        display: flex;
+        margin-top: 5%;
+        justify-content: space-between;
+    }
+    .navigation  nav .logo-container img {
+        display: unset;
+        height: 5vh;
+        width: 10%;
+    }
+    .navigation nav .logo-container h2 {
+        font-size: 1.7em;
+    }
+    .navigation nav .logo-container p {
+        font-size: 5px;
+    }
+
+
+
+
+    .video-background video {
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .text-container h1 {
+        width: 98%;
+        font-size: 2em;
+        line-height: 40px;
+    }
+    .text-container h3 {
+        width: 80%;
+        margin-top: -20px;
+        margin-left: 10%;
+        text-align: center;
+    }
+    .text-container {
+        top: 38%;
+        left: unset;
+    }
+    .statistics {
+        height: 80vh;
+    }
+    .statistics img {
+        width: 60%;
+        height: 60%;
+        margin: 15% 15%;
+    }
+    .text-container-2 {
+        flex-direction: column;
+        width: 100%;
+        height: 20vh;
+        margin: 1%;
+    }
+    .our-mission {
+        top: 1470px;
+        height: 30vh;
+    }
+    .our-mission-container {
+        width: 90%;
+        margin: 0;
+        flex-direction: column;
+    }
+    .our-mission .image-container {
+        max-width: 80%;
+        margin-left: 13%;
+    }
+    .mission-text {
+        margin: 20px 10px;
+        text-align: center;
+    }
+    .our-mission h2 {
+        margin-left: -13px;
+    }
+    .mission-text img {
+        display: none;
+    }
+    .our-mission h4 {
+        width: 90%;
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+
+    .stories {
+        top: 2100px;
+        height: 80vh;
+    }
+    .stories-container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .story-container {
+        width: 70%;
+        margin: 7% 0;
+    }
+    .stories-text h3 {
+        font-size: 15px;
+    }
+    .stories-text h4 {
+        font-size: 13px;
+    }
+
+
+    .carousel {
+        top: 3550px;
+    }
+    .swiper {
+        margin: 10% 0;
+        width: 90%;
+        height: 40vh;
+    }
+    .donations-text h2 {
+        font-size: 20px;
     }
 }
