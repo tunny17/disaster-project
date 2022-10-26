@@ -149,7 +149,7 @@ body::-webkit-scrollbar {
 
 
 .payments {
-    margin-top: 10%;
+    margin-top: 17%;
     margin-left: 15%;
     display: flex;
     height: 40vh;
@@ -161,25 +161,41 @@ body::-webkit-scrollbar {
 .payments2
  {
     margin: 10px;
-    width: 70%;
+    width: 78%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.payments1 h3 {
+.payments1 h3 a {
     color: #00C49A;
+    text-decoration: none;
 }
-.payments2 h3 {
+.payments2 h3 a {
     color: rgb(125,71,51);
+    text-decoration: none;
 }
-.details div {
+.details1 div,
+.details2 div
+ {
     margin: 20px;
+    margin-left: -30%;
+}
+.details2 div {
+    margin-left: -48%;
 }
 strong {
     font-weight: 500;
 }
 .payments h4 {
     color: rgb(21,96,100);
+}
+.payments1 p,
+.payments2 p
+ {
+    margin-top: 10px;
+    width: 60%;
+    font-size: 13px;
+    line-height: 20px;
 }
 .payments h5 {
     margin-top: 10px;
@@ -225,7 +241,7 @@ strong {
         font-size: 13px;
     }
     .navigation-ul li:not(:last-child) {
-        padding: 3px;
+        padding: 4px;
     }
     .navigation-ul li button {
         padding: 12px 20px;
@@ -239,6 +255,7 @@ strong {
         display: flex;
         margin: 0;
         margin-top: 5%;
+        margin-left: 8%;
         justify-content: space-between;
     }
     .navigation  nav .logo-container img {
@@ -259,10 +276,15 @@ strong {
     .hero-section {
         flex-direction: column;
         margin-top: 30%;
+        margin-bottom: 100%;
     }
     .payments {
         flex-direction: column-reverse;
-        margin-top: 87%;
+        margin: 0;
+        margin: 10% 0 10% 15%;
+        position: absolute;
+        top: 150%;
+        text-align: center;
     }
     .text-container h4 {
         width: 100%;
@@ -286,15 +308,34 @@ strong {
      {
         flex-direction: column;
     }
-    .details div {
-        margin: 20px 10px;
-        text-align: center;
+    .payments1 p, 
+    .payments2 p 
+    {
+        width: 100%;
+        line-height: 30px;
+    }
+    .details1 div,
+    .details2 div
+    {
+        margin: 0px;
+        margin: 10px;
     }
     .payments h5 {
         line-height: 25px;
     }
+    strong {
+        font-size: 12px;
+    }
+    .strong-1 {
+        font-size: 13px;
+        text-decoration: underline;
+    }
 
 
+    .drops {
+        position: absolute;
+        top: 198%;
+    }
     .drops p {
         font-size: 13px;
     }

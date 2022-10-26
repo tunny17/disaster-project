@@ -124,6 +124,7 @@ body::-webkit-scrollbar {
     color: #fff;
     font-size: 13px;
     font-weight: 300;
+    margin-left: 10%;
     text-transform: uppercase;
 }
 
@@ -528,7 +529,7 @@ body::-webkit-scrollbar {
         margin: 10px;
     }
     .navigation nav .logo-container {
-        width: 75%;
+        width: 95%;
         display: flex;
         margin-top: 5%;
         justify-content: space-between;
@@ -536,8 +537,8 @@ body::-webkit-scrollbar {
     .navigation  nav .logo-container img {
         display: unset;
         margin-top: 11px;
-        height: 2vh;
-        width: 8%;
+        height: 2.9vh;
+        width: 9%;
     }
     .navigation nav .logo-container h2 {
         font-size: 1.7em;
