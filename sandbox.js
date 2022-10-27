@@ -42,7 +42,7 @@ function openNav() {
 var text = [`your naira can save <br> many lives <br> today`,`your dollar can save <br> many lives <br> today`,`your clothes can save <br> many lives <br> today`,`your donation can save <br> many lives <br> today`];
 var counter = 0;
 var elem = document.getElementById("change-txt");
-var inst = setInterval(change, 4000);
+var inst = setInterval(change, 3000);
 
 function change() {
   elem.innerHTML = text[counter];
@@ -51,3 +51,16 @@ function change() {
     counter = 0;
   }
 }
+
+// var src = ['/img/background1.png','/img/background2.png'];
+// var counter = 0;
+// var video = document.getElementById("video");
+// var inst = setInterval(changeVid, 5000);
+
+// function changeVid() {
+//   video.src = src[counter];
+//   counter++;
+//   if (counter >= src.length) {
+//     counter = 0;
+//   }
+// }
