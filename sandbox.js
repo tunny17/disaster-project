@@ -36,3 +36,18 @@ function openNav() {
   }
   navigation.classList.toggle('visible');
 }
+
+
+  
+var text = [`your naira can save <br> many lives <br> today`,`your dollar can save <br> many lives <br> today`,`your clothes can save <br> many lives <br> today`,`your donation can save <br> many lives <br> today`];
+var counter = 0;
+var elem = document.getElementById("change-txt");
+var inst = setInterval(change, 4000);
+
+function change() {
+  elem.innerHTML = text[counter];
+  counter++;
+  if (counter >= text.length) {
+    counter = 0;
+  }
+}
